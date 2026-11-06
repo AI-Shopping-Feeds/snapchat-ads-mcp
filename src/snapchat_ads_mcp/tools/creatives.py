@@ -161,7 +161,7 @@ def register(mcp, client: SnapchatAdsClient) -> None:
         is set. Files over 32 MB go up in parts (max 1 GB) with progress.
         Set ai_generated=true for AI-generated or AI-modified content (Snap's
         ai_content_source self-declaration). Top Snap specs: 1080x1920, video
-        3-180 s mp4/mov, images 5 MB max.
+        mp4/mov of at least 3 s, images PNG/JPG up to 5 MB.
         """
         aid = client.resolve_ad_account(ad_account_id)
         path = await run_blocking(resolve_upload, client.config.upload_dir, source)
