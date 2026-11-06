@@ -1,0 +1,40 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# --- Credentials, local config and tool output ---
+# Never commit Snap OAuth client secrets or refresh tokens.
+.env
+.env.*
+!.env.example
+secrets/
+*token*.json
+*.pem
+*.p8
+*.key
+# Audit logs written by the server (may contain Snapchat Ads data)
+logs/
+*.jsonl
+*.jsonl.tmp
+# Report exports and media, if you save any by hand
+reports/
+uploads/
+*.csv
+*.xlsx
+
+# --- Tool caches, build output and OS files ---
+.venv/
+.venv-*/
+venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+dist/
+build/
+.DS_Store
+.idea/
+.vscode/
